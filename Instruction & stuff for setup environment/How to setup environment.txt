@@ -1,0 +1,17 @@
+For setup TagLib:
+
+1) Unpack TagLib
+2) Setup CMake
+3) See video how run CMake in terminal
+4)Open Terminal (MacOS console ) & go to the unzipped  folder with TagLib
+5) type next command in terminal(READ COMMENT TO THE LINES):
+
+     cmake -DCMAKE_BUILD_TYPE=Release \    -DCMAKE_OSX_DEPLOYMENT_TARGET=10.10 \   # if need change ver of your system    -DCMAKE_OSX_ARCHITECTURES="i386;x86_64" \    -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/ \    #if need change path to the SDK    -DBUILD_FRAMEWORK=ON 6) type 'make', after 'make install'
+7)	Add TagLib framework to the XCode (see picture)
+
+
+For setup HTMLParser
+
+1) simple unpack folder with HTMLParser & add all src files to you Xcode project
+
+2) add libxml.dylib (see picture)

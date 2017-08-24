@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SendBroadcastMessagesViewController">
+            <connections>
+                <outlet property="hideWithSliderButton" destination="WON-xq-6On" id="9Gz-AZ-Fhm"/>
+                <outlet property="messageText" destination="QDV-0j-5m5" id="EOe-gL-5Jl"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sUK-Wi-sYs">
+                    <rect key="frame" x="321" y="8" width="149" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="82U-kK-xlu"/>
+                        <constraint firstAttribute="height" constant="25" id="p4h-uN-Jv1"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Send Broadcast" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GsF-Xf-dsS">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="14" name=".HelveticaNeueDeskInterface-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="sendMessage:" target="-2" id="4zq-uD-eMf"/>
+                    </connections>
+                </button>
+                <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-d3-g3M">
+                    <rect key="frame" x="12" y="44" width="456" height="109"/>
+                    <clipView key="contentView" id="lzx-P3-aMb">
+                        <rect key="frame" x="1" y="1" width="439" height="107"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="QDV-0j-5m5">
+                                <rect key="frame" x="0.0" y="0.0" width="439" height="107"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="439" height="107"/>
+                                <size key="maxSize" width="463" height="10000000"/>
+                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="439" height="107"/>
+                                <size key="maxSize" width="463" height="10000000"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="109" id="hHq-HB-ldP"/>
+                        <constraint firstAttribute="width" constant="456" id="tUh-DT-dDG"/>
+                    </constraints>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="duU-3Z-odi">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="XeH-43-nLV">
+                        <rect key="frame" x="440" y="1" width="15" height="107"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="WON-xq-6On">
+                    <rect key="frame" x="10" y="159" width="125" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="EbC-oi-sbf"/>
+                        <constraint firstAttribute="width" constant="121" id="kr0-lR-O1S"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="Hide with slider" bezelStyle="regularSquare" imagePosition="right" alignment="center" state="on" inset="2" id="4V4-8v-btx">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hideCHeckBoxPressed:" target="-2" id="5cN-qN-gjN"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-C3-IL6">
+                    <rect key="frame" x="443" y="161" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="X7L-pf-qRY"/>
+                        <constraint firstAttribute="height" constant="25" id="mua-H1-kCG"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="X" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="A1q-Ol-4MD">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeWindowButtonPressed:" target="-2" id="h1i-Ix-2be"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-Au-1ff">
+                    <rect key="frame" x="10" y="8" width="149" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="8MQ-uX-ssC"/>
+                        <constraint firstAttribute="width" constant="145" id="h6t-lt-Xtt"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Close" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bnn-N7-m3f">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="14" name=".HelveticaNeueDeskInterface-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="secondCloseButtonPressed:" target="-2" id="d6A-sc-IhG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Shp-Au-1ff" firstAttribute="baseline" secondItem="sUK-Wi-sYs" secondAttribute="baseline" id="Erf-YE-Av5"/>
+                <constraint firstAttribute="trailing" secondItem="c6H-C3-IL6" secondAttribute="trailing" constant="12" id="KcZ-Aj-SIN"/>
+                <constraint firstItem="sUK-Wi-sYs" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="323" id="Pb3-3a-aD6"/>
+                <constraint firstItem="mKA-d3-g3M" firstAttribute="top" secondItem="WON-xq-6On" secondAttribute="bottom" constant="8" id="Pci-XU-9yJ"/>
+                <constraint firstItem="mKA-d3-g3M" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="12" id="Zga-t4-a37"/>
+                <constraint firstAttribute="bottom" secondItem="sUK-Wi-sYs" secondAttribute="bottom" constant="11" id="ar6-IG-bKT"/>
+                <constraint firstItem="WON-xq-6On" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="12" id="cCc-rx-hmX"/>
+                <constraint firstAttribute="trailing" secondItem="sUK-Wi-sYs" secondAttribute="trailing" constant="12" id="cOV-2p-Mhu"/>
+                <constraint firstItem="c6H-C3-IL6" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="9" id="cxO-1d-CpP"/>
+                <constraint firstItem="Shp-Au-1ff" firstAttribute="leading" secondItem="mKA-d3-g3M" secondAttribute="leading" id="dgX-oX-OF2"/>
+                <constraint firstItem="sUK-Wi-sYs" firstAttribute="top" secondItem="mKA-d3-g3M" secondAttribute="bottom" constant="8" id="fmg-aZ-ue9"/>
+                <constraint firstItem="WON-xq-6On" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="k3i-2q-BLT"/>
+                <constraint firstItem="mKA-d3-g3M" firstAttribute="top" secondItem="c6H-C3-IL6" secondAttribute="bottom" constant="8" id="tKh-qQ-WPQ"/>
+                <constraint firstItem="c6H-C3-IL6" firstAttribute="leading" secondItem="WON-xq-6On" secondAttribute="trailing" constant="310" id="vMV-iY-efq"/>
+                <constraint firstAttribute="trailing" secondItem="mKA-d3-g3M" secondAttribute="trailing" constant="12" id="w8u-JC-dkM"/>
+            </constraints>
+            <point key="canvasLocation" x="155" y="83.5"/>
+        </customView>
+    </objects>
+</document>

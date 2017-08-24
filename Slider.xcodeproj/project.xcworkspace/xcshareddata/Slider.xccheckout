@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A5F58EAF-2761-4476-BA40-C91A5467EF7B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0C3F9042088D2C1A7171CC596192AE3E7719CC9B</key>
+		<string>https://bitbucket.org/xdreamteam/djp-mac.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Slider.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0C3F9042088D2C1A7171CC596192AE3E7719CC9B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/xdreamteam/djp-mac.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0C3F9042088D2C1A7171CC596192AE3E7719CC9B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0C3F9042088D2C1A7171CC596192AE3E7719CC9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Slider</string>
+		</dict>
+	</array>
+</dict>
+</plist>
